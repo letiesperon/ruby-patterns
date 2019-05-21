@@ -5,6 +5,7 @@ class ListBuilderSetting < ApplicationRecord
 
   validates :text_color, :background_color, presence: true
   validate :valid_text_color, :valid_background_color
+  # ...
 
   private
 

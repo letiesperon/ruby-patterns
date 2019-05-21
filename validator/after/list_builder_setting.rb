@@ -1,0 +1,6 @@
+# models/list_builder_setting.rb
+class ListBuilderSetting < ApplicationRecord
+  # ...
+  validates :text_color, :background_color, presence: true, hex: true
+  # ...
+end

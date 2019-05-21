@@ -12,9 +12,3 @@ class HexValidator < ActiveModel::EachValidator
     value =~ /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/i
   end
 end
-
-# models/list_builder_setting.rb
-class ListBuilderSetting < ApplicationRecord
-  # ...
-  validates :text_color, :background_color, presence: true, hex: true
-end

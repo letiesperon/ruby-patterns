@@ -1,7 +1,3 @@
-# controller
-@shop = Shop.new(params[:shop])
-@shop.save
-
 # models/shop.rb
 class Shop < ApplicationRecord
   #...
