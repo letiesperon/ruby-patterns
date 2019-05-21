@@ -6,7 +6,7 @@ module Discountable
                         message_field: :sms_message)
     message = replaced_code_on_message(custom_code: custom_code, message_field: message_field)
     message = MessageUtils.append_jump_url(message, jump_url) if jump_url
-    message = MessageUtils.append_legal_text(message) if append_legal_text_to_sms
+    message = MessageUtils.append_legal_text(message)
     message = MessageUtils.replace_text(message, replace_from, replace_to)
     message
   end
